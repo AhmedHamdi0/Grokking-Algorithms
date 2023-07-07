@@ -42,3 +42,19 @@
 
 > - The **constant** in **Big O** notation can **matter somtimes**.
 > - That's why **quicksort** is **faster** than **merge sort**.
+
+### 4. Hash Tables
+> - A **hash function** is a function that maps a **value to a key**.
+> - The **hash function** must be **consistent** which means consistently **maps the same value to the same key** every time.
+> - Put a **hash function** and an **array** together, and you get  a **data structure** called a **hash table**.
+
+> - **Hash tables** in **python** are **dictionaries**. `book = dict()` **or** `book = {}`.
+> - **Hash tables** are used for **lookups**, **preventing duplicates entries** and for **caching data**.
+> - **Hash tables** takes **O(1)** for everything **(Search, insert, delete)**.
+
+> - **Collisions**: when **two keys** are **mapped** to the **same slot**.
+> - **Collisions** are resolved by: `Linear Probing` **or** `Separate Chaining`.
+>   - It doesn't mean **instant**, it means the **time taken** will be the **same**, **regardless** of how **big** the **hash table** is.
+> - To **avoid collisions**, you need:
+>   - **A low load factor**: **number of items in hash table** `/` **total number of slots**
+>   - **A good hash function**: your **hash function** should **map keys evenly all over the hash**. 
