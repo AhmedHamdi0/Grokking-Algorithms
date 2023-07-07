@@ -23,3 +23,22 @@
 > - All function calls **(even recursive)** go onto **the call stack**. 
 > - Each call to a recursive function has its own copy of the variables. 
 > - You can't access a different function's copy of that variable.
+
+### 4. Quicksort
+> - **Divide & conquer (D&C)** is technique to think about a problem.
+> - To solve a problem using **divide & conquer**, there are two steps;
+>   1. Figure out the base case. This should be the simplest possible case.
+>   2. Divider or decrease your problem until it becomes the base case.
+
+> - **Quicksort algorithm** is applying **D&C** by choosing a **pivot** and **partitioning** the items. Here are the steps:
+>   1. Pick a pivot.
+>   2. Partition the array into two sub-arrays:
+>      - elements less than the pivot.
+>      - elements greater than the pivot.
+>   3. Call quicksort recursively on the two sub-arrays.
+> - The performance of **quicksort** heavily depends on the **pivot** you choose. 
+>   - If you're implementing **quicksort**, choose a **random** element as the **pivot**.
+> - The **average runtime** of quicksort is **O(n log n)** 
+
+> - The **constant** in **Big O** notation can **matter somtimes**.
+> - That's why **quicksort** is **faster** than **merge sort**.
